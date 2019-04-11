@@ -22,7 +22,12 @@ class Markdown extends React.Component {
 		return (
 			<div className={styles.outer}>
 				<h1 className={styles.title}>Markdown Previewer</h1>
-				<textarea id='editor' onChange={this.update} value={this.state.text} />
+				<textarea
+					className={styles.textarea}
+					id='editor'
+					onChange={this.update}
+					value={this.state.text}
+				/>
 				<div
 					className={styles.preview}
 					dangerouslySetInnerHTML={{ __html: xss(marked(this.state.text)) }}
