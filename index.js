@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { withRouter } from 'next/router';
 import xss from 'xss';
 import marked from 'marked';
@@ -20,23 +21,28 @@ class Markdown extends React.Component {
 	render() {
 		//Use anchor tag instead of link to get rid of CDN if needed
 		return (
-			<div className={styles.outer}>
-				<h1 className={styles.title}>Markdown Previewer</h1>
-				<textarea
-					className={styles.textarea}
-					id='editor'
-					onChange={this.update}
-					value={this.state.text}
-				/>
-				<div
-					className={styles.preview}
-					dangerouslySetInnerHTML={{ __html: xss(marked(this.state.text)) }}
-					id='preview'
-				/>
-				<script
-					src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'
-					type='text/javascript'
-				/>
+			<div>
+				<Head>
+					<title>Markdown Previewer by Brandon Suen</title>
+				</Head>
+				<div className={styles.outer}>
+					<h1 className={styles.title}>Markdown Previewer</h1>
+					<textarea
+						className={styles.textarea}
+						id='editor'
+						onChange={this.update}
+						value={this.state.text}
+					/>
+					<div
+						className={styles.preview}
+						dangerouslySetInnerHTML={{ __html: xss(marked(this.state.text)) }}
+						id='preview'
+					/>
+					<script
+						src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'
+						type='text/javascript'
+					/>
+				</div>
 			</div>
 		);
 	}
