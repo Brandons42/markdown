@@ -1,0 +1,20 @@
+@import 'styles/_vars';
+
+.outer {
+	padding: 10vh 10vw;
+}
+
+.preview {
+	line-height: 1.5em;
+
+	blockquote {
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 40px;
+		margin-inline-end: 40px;
+	}
+}
+
+.title {
+	@extend %header;
+}
