@@ -1,0 +1,19 @@
+$black: #404040;
+$blue: #26377c;
+$semitparent: rgba(38, 55, 124, 0.7);
+$tparent: rgba(0, 0, 0, 0);
+
+$mont: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+$navh: 15vh;
+
+%body-text {
+	font-family: $mont;
+	font-size: 18px;
+}
+
+%header {
+	font-family: $roboto;
+	font-size: 60px;
+}

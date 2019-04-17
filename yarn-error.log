@@ -1,0 +1,29 @@
+Arguments: 
+  /Users/BrandonSuen/.nvm/versions/node/v10.15.3/bin/node /Users/BrandonSuen/.yarn/bin/yarn.js add -D node-sass @babel/preset-react @babel/preset-env parcel-bundler @babel/plugin-proposal-class-properties
+
+PATH: 
+  /anaconda3/bin:/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/BrandonSuen/.yarn/bin:/Users/BrandonSuen/.nvm/versions/node/v10.15.3/bin:/Users/BrandonSuen/.rvm/gems/ruby-2.4.2/bin:/Users/BrandonSuen/.rvm/gems/ruby-2.4.2@global/bin:/Users/BrandonSuen/.rvm/rubies/ruby-2.4.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/BrandonSuen/.rvm/bin:/Users/BrandonSuen/.rvm/bin:/Users/BrandonSuen/Library/Android/sdk/tools:/Users/BrandonSuen/Library/Android/sdk/tools/bin:/Users/BrandonSuen/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: self signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1051:34)
+      at TLSSocket.emit (events.js:189:13)
+      at TLSSocket._finishInit (_tls_wrap.js:633:8)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

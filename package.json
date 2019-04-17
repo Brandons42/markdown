@@ -1,0 +1,20 @@
+{
+  "name": "markdown",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Brandons42/markdown.git",
+  "author": "Brandon <brandonbsuen@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "marked": "^0.6.2",
+    "xss": "^1.0.6"
+  }
+}
